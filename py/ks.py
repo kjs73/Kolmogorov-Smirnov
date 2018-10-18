@@ -13,7 +13,7 @@ data = os.listdir("../data/")
 
 for a in data:
     for b in data:
-        if a != b:
+        if a < b:
             print(a,b)
             x = get_data("../data/" + a)
             y = get_data("../data/" + b)
